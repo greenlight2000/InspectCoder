@@ -1,1 +1,3 @@
-# InspectCoder
+This repo contains the core implementation for [InspectCoder](inspectcoder.py) and [InspectWare](inspectware.py). To run the script, please replace `LLM(model_name=args.model_name)` with your own LLM implementation in InspectCoder, and replace `YOUR_PYTHON_ENV_HERE` with your python environment path in InspectWare. To replicate the evaluation on BigCodeBench and LiveCodeBench, please also prepare the execution environments specified in https://github.com/bigcode-project/bigcodebench/ and https://github.com/LiveCodeBench/LiveCodeBench for their dataset-specific executor implementations.
+
+We also provide the constructed APR benchmarks (QWen-Max generated bugs) at: [BigCodeBench-R](datasets/BigCodeBench-R.csv) and [LiveCodeBench-R](datasets/LiveCodeBench-R.csv). We sample 100 and 20 insptances respectively due to github file size limit.
