@@ -451,14 +451,10 @@ class InspectWare:
         frames = [frame for frame in frames if not frame['file'].endswith('/bdb.py')]
         return frames[1:]
     def print_variable(self, variable_name):
-        """
-        打印变量的值。
-        """
         return self.exec_cmd(f"p {variable_name}")
 
     def list_breakpoints(self)->list[dict]:
         """
-        列出所有断点。
         # intermediate raw output:
         Num Type         Disp Enb   Where
         1   breakpoint   keep yes   at example_buggycode.py:1
