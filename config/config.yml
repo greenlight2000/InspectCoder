@@ -1,0 +1,26 @@
+# InspectCoder Project Configuration
+
+# basics
+project:
+  root: "/path/to/InspectCoder"
+  results: "/path/to/InspectCoder/results"
+
+# external modules
+external_dependencies:
+  livecodebench: "/path/to/LiveCodeBench"
+  request_model: "/path/to/model_request_module"
+  bigcodebench: "/path/to/bigcodebench"
+
+# models
+models:
+  deepseek: "/path/to/local_models/deepseek"
+  qwen_32b: "/path/to/local_models/qwen_32b"
+
+# debugger
+python:
+  path: "/path/to/miniforge3/envs/InspectCoder/bin/python" # tested on python>=3.10
+
+# datasets
+datasets:
+  livecodebench: "/path/to/LiveCodeBench-R.csv"
+  bigcodebench: "/path/to/BigCodeBench-R.csv"

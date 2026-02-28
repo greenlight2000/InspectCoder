@@ -1,0 +1,4 @@
+# InspectCoder
+This repo contains the core implementation for [InspectCoder](inspectcoder.py) and [InspectWare](inspectware.py). To run the script, please prepare an external module `LLM` for LLM inference, put the module paths to [config.yml](config/config.yml). This will be used in `from request_model import LLM; llm = LLM(model_name=args.model_name)` in InspectCoder. To prepare the execution environments, please also download the [LiveCodeBench](https://github.com/bigcode-project/bigcodebench/) and [BigCodeBench](https://github.com/bigcode-project/bigcodebench/) repositories and put their paths to [config.yml](config/config.yml).
+
+We also provide full logs of case studies conducted in our paper at [case_study](case_study) for your convenient review.
